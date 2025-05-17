@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>TASK-1</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+  body{
+	background-image: url('3.jpg');
+	background-size: 100% ;
+	margin: 0;
+	}
+	#heading{
+	color: rgb(255, 102, 0);
+	background-color: white;
+	height: 150px;
+	width: 50%;
+	font-size: 70px;
+	font-family: arial, helvetica, sans-serief;
+	letter-spacing: 5px;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+    gap: 20px;
+	}
+	nav{
+	background-color: #333;
+	height: 50px;
+	font-size: 20px;
+	text-align: right;
+	}
+	select,a{
+	color: #fff;
+	font-size: 40px;
+	font-weight: bold;
+	text-decoration: none;
+	}
+	#i1{
+	height: 100px;
+	width: 100px;
+	}
+	#a1{
+	padding: 20px;
+	}
+	select{
+	
+	background-color: #333;
+	border: none;
+	font-family: "Times New Roman", Times, serief;
+	}
+	#i2{
+	width: 458px;
+	height: 509px;
+	}
+	figcaption {
+      padding-left: 120px;
+      font-size: 34px;
+      font-weight: bold;
+      color: white;
+	  padding-top: 0;
+	  }
+	nav a:hover {
+ color: blue;
+ }
+ option, select:hover {
+ color: blue;
+ }
+ #div2{
+ border: 2px black solid;
+ padding: 4px;
+ margin-right: 54%;
+ 
+ }
+ #inner{
+ width: 300px;
+ height: 509px;
+ margin-top: -500px;
+ padding-left: 500px;
+ text-align:justify;
+ font-size: 19px;
+ }
+ #b1{
+ font-size: 30px;
+ text-decoration: none;
+ color: blue;
+ font-family: cursive;
+ background-color: cyan;
+ border-color: red;
+ font-weight: bold;
+ }
+ #div1{
+ padding-left: 87%;
+ margin-top: -10%;
+ }
+  </style>
+ </head>
+ <body>
+ <script>
+	function redirect(){
+		const usertype = document.getElementById("usertype").value;
+		if (usertype === "student")
+		{
+			window.location.href = "SLogin.html";
+		}
+		else if (usertype === "parent")
+		{
+			window.location.href = "Plogin.html";
+		}
+		else if (usertype === "admin")
+		{
+			window.location.href = "ALogin.html";
+		}
+		else if (usertype === "lecturer")
+		{
+			window.location.href = "LLogin.html";
+		}
+	}
+	function fun1(){
+		alert("Welcome to Aditya University.")
+	}
+ </script>
+  <center>
+  <br>
+  <nav>
+			<select id="usertype" onchange="redirect()">
+				<option>🔐Login</option>
+				<option value="student"><a>👨‍🎓Student</a></option>
+				<option value="parent"><a>👪Parent</a></option>
+				<option value="lecturer"><a>👨‍🏫Lecturer</a></option>
+				<option value="admin"><a>🛡️Admin</a></option>
+			</select>
+		<a href="About.html" id="a1"><i class="fas fa-info-circle"></i>About</a>
+	</nav>
+  <div>
+	<h1 id="heading"><img id = "i1"  src="2.png">ADITYA UNIVERSITY</h1>
+	</center>
+	
+	</div>
+  <div id="div2"><figure>
+	<img src="clg.webp" id="i2"><div id="inner"> <h3>Welcome to Aditya University</h3>
+<p>Embark on a transformative journey towards academic excellence and personal growth. Aditya University opens the doors to a world of possibilities, where education transcends boundaries and empowers you to shape your future. At Aditya University, education is more than a degree it's a pathway to unlocking your full potential and making a meaningful impact.</p>
+
+<p>The campus, set in a vibrant environment, attracts students from more than 20 countries, creating a diverse and enriching academic experience. This multicultural atmosphere fosters collaboration and innovation, preparing students for a global workforce.</p></div>
+	<figcaption>ADITYA CAMPUS</figcaption>
+  </figure></div>
+  <form>
+	<div id="div1"><input type="button" onclick="fun1()" value="Join" id="b1"></div>
+  </form>
+ </body>
+</html>
